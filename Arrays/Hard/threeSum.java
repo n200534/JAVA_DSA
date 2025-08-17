@@ -49,6 +49,9 @@ public class threeSum {
     }
 
     //optimal solution 
+    //Time Complexity: O(n^2)
+    //Space Complexity: O(1) for the output list, O(n) for the set
+    //This method uses a two-pointer technique after sorting the array.
     public static List<List<Integer>> threeSum3(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         Arrays.sort(nums);
