@@ -13,10 +13,10 @@ public class minimum_rotated_sorted {
         int ans=Integer.MAX_VALUE;
         while(low<=high){
             int mid=low +(high-low)/2;
-            if(arr[low]<arr[mid]){
+            if(arr[low]<=arr[mid]){
                 ans=Math.min(ans,arr[low]); // left part is sorted, so minimum is at low
                 low=mid+1; // search in the right part
-            } else if(arr[mid]<arr[high]){
+            } else if(arr[mid]<=arr[high]){
                 ans=Math.min(ans,arr[mid]); // right part is sorted, so minimum is at mid
                 high=mid-1; // search in the left part
             } else {
