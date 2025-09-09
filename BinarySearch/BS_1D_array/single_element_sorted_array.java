@@ -31,6 +31,6 @@ public class single_element_sorted_array {
         }
 
         return -1;
-    }
+    } 
 
 }
