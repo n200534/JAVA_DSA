@@ -10,6 +10,7 @@ public class hashing {
             freqMap.put(num,freqMap.getOrDefault(num,0)+1 );
 
         }
+        
 
         for(int key:freqMap.keySet()){
             System.out.println(key +" appears "+freqMap.get(key)+" times ");
