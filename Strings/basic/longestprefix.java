@@ -1,0 +1,22 @@
+package Strings.basic;
+
+public class longestprefix {
+    // Function to find the longest common prefix among an array of strings
+    //sort the array and compare the first and last strings
+    public static String longestcommonprefix(String []strs){
+        if(strs==null || strs.length==0){
+            return "";
+        }
+        java.util.Arrays.sort(strs);
+        String first=strs[0];
+        String last=strs[strs.length-1];
+        int i=0;
+        while(i<first.length() && i<last.length()){
+            if(first.charAt(i)!=last.charAt(i)){
+                break;
+            }
+            i++;
+        }
+        return first.substring(0,i);
+    }
+}
